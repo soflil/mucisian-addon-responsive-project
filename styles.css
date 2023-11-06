@@ -43,3 +43,7 @@ body {
   color: rgba(255, 255, 255, 1);
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+footer {
+  text-align: center;
+}
