@@ -1,49 +1,100 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #e7eaf6;
 }
 
-.hero {
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2023/11/KENYA-GRACE-ALT-CREDIT_HANNAH-DIAMOND-1.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: rgba(255, 255, 255, 1);
   text-align: center;
   line-height: 1.5;
-  padding: 140px 0;
+  padding: 200px 0;
 }
 
-.hero h1 {
+header h1,
+header h2,
+header h3 {
+  opacity: 0.9;
+}
+
+header h1 {
   font-weight: 800;
-  font-size: 128px;
+  font-size: 100px;
   margin: 0;
+  letter-spacing: 4px;
 }
 
-.hero h2 {
-  font-size: 40px;
+header h2 {
+  font-size: 24px;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 64px;
+  letter-spacing: 4px;
 }
 
-.hero h3 {
+header h3 {
   font-size: 24px;
   font-weight: 800;
-  letter-spacing: 5px;
-  margin: 0;
+  letter-spacing: 7px;
+  margin: 30px 0 0 0;
 }
 
-.hero button {
+header a {
+  text-decoration: none;
+  letter-spacing: 4px;
   padding: 12px 25px;
   border-radius: 10px;
   border: 1px solid rgba(251, 92, 141, 1);
   background: rgba(251, 92, 141, 1);
   font-size: 14px;
   font-weight: 700;
-  margin-top: 64px;
   color: rgba(255, 255, 255, 1);
   font-family: "Plus Jakarta Sans", sans-serif;
+  transition: 200ms all ease-in-out;
+}
+
+header a:hover {
+  color: rgba(251, 92, 141, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 footer {
   text-align: center;
+  margin: 20px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 100px 0;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  header a {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
