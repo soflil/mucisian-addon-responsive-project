@@ -1,0 +1,45 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2023/11/KENYA-GRACE-ALT-CREDIT_HANNAH-DIAMOND-1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 1.5;
+  padding: 140px 0;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 128px;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero h3 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(251, 92, 141, 1);
+  background: rgba(251, 92, 141, 1);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 64px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
