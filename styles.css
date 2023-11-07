@@ -3,13 +3,21 @@ body {
   background-color: #e7eaf6;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2023/11/KENYA-GRACE-ALT-CREDIT_HANNAH-DIAMOND-1.jpg");
   background-size: cover;
   background-position: center;
@@ -68,12 +76,45 @@ header a:hover {
   border-color: rgba(255, 255, 255, 1);
 }
 
-footer {
-  text-align: center;
-  margin: 20px;
+.container-footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://imgs.bigtop40.com/images/608327?crop=16_9&width=660&relax=1&format=webp&signature=INAxuthX9E6H5EYOkvFQhRsANP0=");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 170px;
+  margin: 0 0 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+  font-family: "Playfair Display", serif;
 }
 
-@media (max-width: 900px) {
+.grid-box h2 {
+  font-size: 22px;
+  color: #e7eaf6;
+  opacity: 0.9;
+}
+
+.grid-box p,
+.grid-box a {
+  color: #e7eaf6;
+  opacity: 0.9;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+footer .coded-by {
+  text-align: center;
+  margin: 30px 0;
+}
+
+@media (max-width: 600px) {
+  .container-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
   header {
     padding: 100px 0;
   }
@@ -96,5 +137,22 @@ footer {
 
   footer {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-footer {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid-box h2 {
+    font-size: 18px;
+    border-bottom: 1px dashed #e7eaf6;
+  }
+
+  .grid-box p,
+  .grid-box a {
+    font-size: 16px;
   }
 }
