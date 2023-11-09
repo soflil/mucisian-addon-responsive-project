@@ -1,6 +1,8 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #e7eaf6;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1,
@@ -8,23 +10,32 @@ h2,
 h3,
 p {
   line-height: 1.5;
+  margin: 0;
+  opacity: 0.9;
+}
+
+p {
+  font-size: 14px;
 }
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
-  border-radius: 4px;
 }
 
 .button {
-  text-decoration: none;
   letter-spacing: 4px;
   padding: 12px 25px;
   border-radius: 10px;
@@ -63,7 +74,7 @@ img {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2023/11/KENYA-GRACE-ALT-CREDIT_HANNAH-DIAMOND-1.jpg");
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/404/original/KENYA-GRACE-ALT-CREDIT_HANNAH-DIAMOND-1.jpeg?1699528353");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,23 +83,15 @@ header {
   padding: 200px 0;
 }
 
-header h1,
-header h2,
-header h3 {
-  opacity: 0.9;
-}
-
 header h1 {
   font-weight: 800;
   font-size: 100px;
-  margin: 0;
   letter-spacing: 4px;
 }
 
 header h2 {
   font-size: 24px;
   font-weight: 700;
-  margin: 0;
   margin-bottom: 64px;
   letter-spacing: 4px;
 }
@@ -100,16 +103,21 @@ header h3 {
   margin: 30px 0 0 0;
 }
 
-section {
+.why-section {
   background-color: #fff;
   padding: 100px 10px;
 }
 
-.section-text {
+.why-section img {
+  border-radius: 4px;
+}
+
+.why-section-text {
   padding: 0 40px;
 }
 
-section h3 {
+.why-section h3,
+.cards-section h3 {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 3px;
@@ -117,25 +125,106 @@ section h3 {
   color: rgba(251, 92, 141, 1);
 }
 
-section h2 {
-  font-size: 48px;
+.why-section h2 {
+  font-size: 42px;
   font-weight: 800;
-  opacity: 0.9;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-section p {
-  font-size: 16px;
-  opacity: 0.7;
+.why-section p {
   margin-bottom: 40px;
+  font-weight: 500;
 }
 
-section .button {
+.why-section .button {
   font-size: 12px;
+}
+
+.cards-section {
+  background-color: rgba(204, 206, 226, 0.4);
+  padding: 70px 50px;
+}
+
+.cards-section-grid {
+  grid-row-gap: 20px;
+  align-items: stretch;
+}
+
+.cards-section h3 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cards-section h2 {
+  font-family: Plus Jakarta Sans;
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.card {
+  background-color: #e7eaf6;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.card p {
+  font-weight: 400;
+  word-spacing: 2px;
+  padding-bottom: 10px;
+  flex-grow: 1;
+}
+
+.card-footer {
+  padding-top: 10px;
+}
+
+.card .card-button {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  text-decoration: none;
+  letter-spacing: 4px;
+  padding: 14px 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(251, 92, 141, 1);
+  background: rgba(251, 92, 141, 1);
+  font-weight: 700;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+}
+
+.card .card-button:hover {
+  color: rgba(251, 92, 141, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .container-footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://imgs.bigtop40.com/images/608327?crop=16_9&width=660&relax=1&format=webp&signature=INAxuthX9E6H5EYOkvFQhRsANP0=");
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/408/original/kenyagrace.jpeg?1699528551");
   background-size: cover;
   background-position: center;
   padding: 60px 170px;
@@ -143,23 +232,36 @@ section .button {
   font-family: "Playfair Display", serif;
 }
 
-.grid-box h2 {
-  font-size: 22px;
+.footer-text h2 {
+  font-size: 20px;
   color: #e7eaf6;
-  opacity: 0.9;
+  border-bottom: 1px dashed #e7eaf6;
 }
 
-.grid-box p,
-.grid-box a {
+.footer-text p,
+.footer-text a {
   color: #e7eaf6;
-  opacity: 0.9;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+.github-link {
+  text-decoration: underline;
+}
+
+.github-link:hover {
+  text-decoration: none;
 }
 
 footer .coded-by {
   text-align: center;
   margin: 30px 0;
+  font-size: 12px;
 }
 
 @media (max-width: 700px) {
@@ -198,57 +300,75 @@ footer .coded-by {
     grid-gap: 10px;
   }
 
-  section {
+  img {
+    display: none;
+  }
+
+  .why-section {
     padding-top: 20px;
   }
 
-  section img {
-    margin: 0 auto;
-    display: block;
-  }
-
-  .section-text {
+  .why-section-text {
     margin: 0 20px;
   }
 
-  section h3 {
+  .why-section h3 {
     font-size: 8px;
   }
 
-  section h2 {
+  .why-section h2 {
     font-size: 20px;
   }
 
-  section p {
+  .why-section p {
     font-size: 12px;
   }
 
-  section .button {
+  .why-section .button {
     font-size: 10px;
   }
-}
 
-@media (max-width: 1300px) {
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .cards-section h2 {
+    font-size: 34px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card-button {
+    max-width: 300px;
+  }
+
   .grid-3-columns {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+}
 
-  .grid-box h2 {
-    font-size: 18px;
-    border-bottom: 1px dashed #e7eaf6;
-  }
-
-  .grid-box p,
-  .grid-box a {
+@media (max-width: 1200px) {
+  .footer-text h2 {
     font-size: 16px;
   }
 
-  section h2 {
+  .footer-text p,
+  .footer-text a {
+    font-size: 12px;
+  }
+
+  .why-section h2 {
     font-size: 30px;
   }
 
-  section p {
+  .why-section p {
     font-size: 14px;
   }
 }
