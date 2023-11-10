@@ -55,16 +55,16 @@ img {
 }
 
 .grid {
-  grid-gap: 60px;
+  grid-gap: 20px;
   display: grid;
-}
-
-.grid-3-columns {
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container {
@@ -103,6 +103,19 @@ header h3 {
   margin: 30px 0 0 0;
 }
 
+.pink-heading {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(251, 92, 141, 1);
+}
+
+.why-section h3 {
+  text-align: left;
+}
+
 .why-section {
   background-color: #fff;
   padding: 100px 10px;
@@ -114,15 +127,6 @@ header h3 {
 
 .why-section-text {
   padding: 0 40px;
-}
-
-.why-section h3,
-.cards-section h3 {
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(251, 92, 141, 1);
 }
 
 .why-section h2 {
@@ -152,7 +156,6 @@ header h3 {
 }
 
 .cards-section h3 {
-  text-align: center;
   padding-bottom: 10px;
 }
 
@@ -220,6 +223,38 @@ header h3 {
 .card .card-button:hover {
   color: rgba(251, 92, 141, 1);
   background-color: rgba(255, 255, 255, 1);
+}
+
+.video-section {
+  background-color: #ffffff;
+  padding: 50px 60px;
+}
+
+.video-section h2 {
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.video-grid {
+  grid-gap: 10px;
+}
+
+.video-grid-row {
+  margin: 10px;
+}
+
+.video {
+  width: 100%;
+  height: 352px;
+  border-radius: 12px;
+}
+
+.video-box {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .container-footer {
@@ -305,7 +340,7 @@ footer .coded-by {
   }
 
   .why-section {
-    padding-top: 20px;
+    padding-top: 100px;
   }
 
   .why-section-text {
@@ -348,13 +383,33 @@ footer .coded-by {
     max-width: 300px;
   }
 
+  .video-section h3 {
+    font-size: 10px;
+  }
+
+  .video-section h2 {
+    font-size: 24px;
+  }
+
   .grid-3-columns {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
+  .video-grid {
+    grid-row-gap: 5px;
+  }
 }
 
 @media (max-width: 1200px) {
+  .why-section h2 {
+    font-size: 30px;
+  }
+
+  .why-section p {
+    font-size: 14px;
+  }
+
   .footer-text h2 {
     font-size: 16px;
   }
@@ -362,13 +417,5 @@ footer .coded-by {
   .footer-text p,
   .footer-text a {
     font-size: 12px;
-  }
-
-  .why-section h2 {
-    font-size: 30px;
-  }
-
-  .why-section p {
-    font-size: 14px;
   }
 }
