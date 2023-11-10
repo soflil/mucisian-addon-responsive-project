@@ -281,8 +281,12 @@ header h3 {
   margin-top: 5px;
 }
 
-.footer-text a:hover {
+.footer-text a {
   text-decoration: underline;
+}
+
+.footer-text a:hover {
+  text-decoration: none;
 }
 
 .github-link {
